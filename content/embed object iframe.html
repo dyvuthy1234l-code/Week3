@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embedding PDF: iframe vs embed vs object</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>
+                <a href="../index.html">&larr; Back to Week 3 Home</a>
+            </p>
+        </nav>
+        <h1>Embedding PDF: iframe vs embed vs object</h1>
+        <hr>
+    </header>
+
+    <main>
+        <!-- IFRAME -->
+        <section>
+            <h2>Using &lt;iframe&gt;</h2>
+            <iframe src="FEWAD2526.pdf" width="100%" height="300"></iframe>
+        </section>
+
+        <!-- EMBED -->
+        <section>
+            <h2>Using &lt;embed&gt;</h2>
+            <embed src="FEWAD2526.pdf" type="application/pdf" width="100%" height="300" />
+        </section>
+
+        <!-- OBJECT -->
+        <section>
+            <h2>Using &lt;object&gt;</h2>
+            <object data="FEWAD2526.pdf" type="application/pdf" width="100%" height="300">
+                <p>PDF could not be displayed.</p>
+                <a href="FEWAD2526.pdf">Download PDF</a>
+            </object>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 My Portfolio - Week 3</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 3 Answers - FEWAD RUPP</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">&larr; Back to Week 3 Home</a></p>
+        <h1>ចម្លើយស្វ័យសិក្សា សប្តាហ៍ទី៣ (Week 3 Answers)</h1>
+        <p><strong>គ្រឹះស្ថានសិក្សា៖</strong> សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP) | ឆ្នាំទី ៣ - ថ្នាក់ A3</p>
+        <p><strong>មុខវិជ្ជា៖</strong> Front-End Web Application Development (FEWAD)</p>
+        <hr>
+    </header>
+
+    <main>
+        <h2>ផ្នែកទី១ (ថ្ងៃទី១)៖ ១.៦. Semantic HTML (HTML ស៊ីមែនទិក)</h2>
+        <p>
+            <strong>និយមន័យ (Definition):</strong><br>
+            Semantic HTML គឺជាការប្រើប្រាស់ HTML Tags ណាដែលមានអត្ថន័យបញ្ជាក់យ៉ាងច្បាស់លាស់អំពីតួនាទី និងប្រភេទនៃមាតិកានៅខាងក្នុងវា ទាំងចំពោះមនុស្ស (អ្នកអភិវឌ្ឍន៍) និងចំពោះម៉ាស៊ីន (Web Browser, Search Engine Bots, Screen Readers) ជាជាងការប្រើ Tags ទូទៅដែលគ្មានអត្ថន័យដូចជា <code>&lt;div&gt;</code> និង <code>&lt;span&gt;</code>។
+        </p>
+
+        <p><strong>ស្លាកសញ្ញា Semantic សំខាន់ៗ និងតួនាទី៖</strong></p>
+        <ul>
+            <li><code>&lt;header&gt;</code>: ផ្នែកក្បាលទំព័រ ឬផ្នែកណែនាំ (ផ្ទុក logo, ចំណងជើង, search)។</li>
+            <li><code>&lt;nav&gt;</code>: ផ្នែកនៃតំណភ្ជាប់មឺនុយសម្រាប់ធ្វើដំណើរក្នុងវេបសាយ (Navigation)។</li>
+            <li><code>&lt;main&gt;</code>: ផ្ទុកមាតិកាស្នូលចម្បងនៃទំព័រ (មានតែមួយគត់ក្នុងមួយទំព័រ)។</li>
+            <li><code>&lt;section&gt;</code>: កំណត់ប្លុកមាតិកាដែលមានប្រធានបទជាក់លាក់ណាមួយ។</li>
+            <li><code>&lt;article&gt;</code>: ប្លុកមាតិកាឯករាជ្យដែលអាចឈរតែឯងបាន (ឧ. អត្ថបទព័ត៌មាន, Blog post)។</li>
+            <li><code>&lt;aside&gt;</code>: មាតិកាបន្ថែម ឬ Sidebars ដែលពាក់ព័ន្ធដោយប្រយោលជាមួយមាតិកាចម្បង។</li>
+            <li><code>&lt;footer&gt;</code>: ផ្នែកបាតក្រោមនៃទំព័រ (ព័ត៌មានរក្សាសិទ្ធិ, ទំនាក់ទំនង, Social links)។</li>
+        </ul>
+
+        <p><strong>សារៈប្រយោជន៍ចម្បងនៃ Semantic HTML៖</strong></p>
+        <ol>
+            <li><strong>SEO (Search Engine Optimization):</strong> ជួយឱ្យ Search Engine Bots (ដូចជា Google, Bing) យល់ច្បាស់អំពីរចនាសម្ព័ន្ធមាតិកា ធ្វើឱ្យវេបសាយទទួលបានចំណាត់ថ្នាក់ខ្ពស់ក្នុងការស្វែងរក។</li>
+            <li><strong>Web Accessibility (a11y):</strong> ជួយឱ្យជនពិការភ្នែកដែលប្រើប្រាស់ Screen Readers អាចរុករកផ្នែកនីមួយៗនៃទំព័របានរហ័ស និងត្រឹមត្រូវ។</li>
+            <li><strong>Code Readability &amp; Maintainability:</strong> ធ្វើឱ្យកូដមានរបៀបរៀបរយ ងាយស្រួលអាន ងាយយល់ និងងាយកែសម្រួលសម្រាប់ក្រុមការងារ Developers។</li>
+        </ol>
+
+        <hr>
+
+        <h2>ផ្នែកទី២ (ថ្ងៃទី១)៖ ១.៧. Embedding External Content (ការបង្កប់មាតិកាខាងក្រៅ)</h2>
+        <p>HTML ផ្តល់នូវស្លាកចំនួន ៣ សម្រាប់បង្កប់ឯកសារ ឬមាតិកាខាងក្រៅ (ដូចជា PDF, វីដេអូ, ផែនទី) ចូលក្នុងទំព័រវេបសាយ៖</p>
+
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+                <th>Element</th>
+                <th>គោលបំណងចម្បង (Primary Purpose)</th>
+                <th>ចំណុចខ្លាំង (Strengths)</th>
+                <th>ចំណុចខ្សោយ (Limitations)</th>
+            </tr>
+            <tr>
+                <td><code>&lt;iframe&gt;</code></td>
+                <td>បង្កើត Inline Browsing Context ដាច់ដោយឡែកមួយក្នុងទំព័រ។ ពេញនិយមបំផុតសម្រាប់បង្កប់ YouTube Videos, Google Maps, និងទំព័រវេបសាយខាងក្រៅ។</td>
+                <td>មានសុវត្ថិភាពខ្ពស់ដោយអាចប្រើ Attribute <code>sandbox</code>, គាំទ្រលើគ្រប់ Browser ទាំងអស់។</td>
+                <td>ត្រូវការទំហំ Memory បន្ថែម ព្រោះវាបង្កើត Window ដាច់ដោយឡែកមួយទៀត។</td>
+            </tr>
+            <tr>
+                <td><code>&lt;embed&gt;</code></td>
+                <td>ជា Self-closing Tag ប្រើសម្រាប់ផ្ទុក Plugin ខាងក្រៅ ឬឯកសារ Media ដូចជា PDF ដោយផ្ទាល់។</td>
+                <td>សរសេរកូដខ្លី សាមញ្ញ ងាយស្រួលប្រើសម្រាប់បង្ហាញ PDF ផ្ទាល់លើទំព័រ។</td>
+                <td>គ្មាន Fallback Content (មិនអាចសរសេរអក្សរបម្រុងទុកពេល Error ឬពេល Browser មិនគាំទ្រឡើយ)។</td>
+            </tr>
+            <tr>
+                <td><code>&lt;object&gt;</code></td>
+                <td>ជា Container ពហុបំណងដែលអាចផ្ទុកឯកសារបានច្រើនប្រភេទ (PDF, រូបភាព, អូឌីយ៉ូ, កម្មវិធីខាងក្រៅ)។</td>
+                <td>អនុញ្ញាតឱ្យសរសេរ Fallback Content នៅខាងក្នុង ប្រសិនបើ Browser មិនអាចបង្ហាញឯកសារនោះបាន (ឧ. ដាក់ Link ឱ្យទាញយក PDF)។</td>
+                <td>Syntax មានភាពស្មុគស្មាញជាងបន្តិចបើធៀបនឹង Tag ផ្សេងទៀត។</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>ផ្នែកទី៣ (ថ្ងៃទី២)៖ Absolute Address vs Relative Address</h2>
+
+        <h3>១. Absolute address (Absolute URL) នៅក្នុងវេបសាយ</h3>
+        <p>
+            <strong>និយមន័យ៖</strong> គឺជាអាសយដ្ឋានពេញលេញមួយដែលចង្អុលបង្ហាញទីតាំងពិតប្រាកដនៃធនធាន (Resource: ទំព័រ, រូបភាព, ឯកសារ) នៅលើប្រព័ន្ធអ៊ីនធឺណិតទាំងមូល។<br>
+            <strong>រចនាសម្ព័ន្ធ៖</strong> វាតែងតែរួមបញ្ចូលនូវ <code>Protocol</code> (https://) + <code>Domain Name</code> (www.example.com) + <code>Path</code> (/content/work.html)។<br>
+            <strong>ឧទាហរណ៍៖</strong> <code>https://front-end.com.kh/content/work.html</code><br>
+            <strong>ការប្រើប្រាស់៖</strong> ប្រើសម្រាប់បង្កើតតំណភ្ជាប់ទៅកាន់គេហទំព័រខាងក្រៅ (External Links) ឬភ្ជាប់ទៅកាន់បណ្ណាល័យ CDN ខាងក្រៅ។
+        </p>
+
+        <h3>២. Relative address (Relative URL) នៅក្នុងវេបសាយ</h3>
+        <p>
+            <strong>និយមន័យ៖</strong> គឺជាអាសយដ្ឋានដែលចង្អុលបង្ហាញទីតាំងនៃឯកសារមួយដោយ <strong>ផ្អែកលើទីតាំងបច្ចុប្បន្ននៃឯកសារកំពុងដំណើរការ</strong> ដោយមិនមានផ្ទុកឈ្មោះ Protocol ឬ Domain Name ឡើយ។<br>
+            <strong>ទម្រង់នៃការសរសេរ៖</strong>
+        </p>
+        <ul>
+            <li>ក្នុង Folder ជាមួយគ្នា៖ <code>work.html</code> ឬ <code>./work.html</code></li>
+            <li>ក្នុង Folder រង (Child folder)៖ <code>content/work.html</code> ឬ <code>image/HTML1.0.png</code></li>
+            <li>ថយក្រោយចេញទៅក្រៅមួយកម្រិត (Parent folder)៖ <code>../index.html</code> ឬ <code>../image/HTML1.0.png</code></li>
+            <li>ផ្អែកលើ Root នៃវេបសាយ៖ <code>/content/work.html</code></li>
+        </ul>
+        <p>
+            <strong>អត្ថប្រយោជន៍ចម្បងនៃ Relative URL៖</strong> ជួយឱ្យគម្រោងវេបសាយមានភាពងាយស្រួលក្នុងការផ្លាស់ទី (High Portability)។ នៅពេលអ្នកផ្លាស់ប្តូរទីតាំង Folder វេបសាយលើកុំព្យូទ័រ (Localhost) ឬ Upload ទៅកាន់ Cloud Hosting ដូចជា Netlify តំណភ្ជាប់រូបភាព និងទំព័រទាំងអស់នឹងនៅតែដំណើរការយ៉ាងត្រឹមត្រូវ ១០០% ដោយមិនបាច់កែសម្រួលឡើយ។
+        </p>
+
+        <hr>
+
+        <h2>ផ្នែកទី៤ (ថ្ងៃទី២)៖ ជំហាននៃការដាក់ឱ្យដំណើរការវេបសាយលើ Netlify (Deploy Website to Netlify Drop)</h2>
+        <ol>
+            <li><strong>ចុះឈ្មោះគណនី៖</strong> ចូលទៅកាន់ <code>https://app.netlify.com/signup</code> រួចចុះឈ្មោះតាម Google ឬ GitHub។</li>
+            <li><strong>ផ្ទៀងផ្ទាត់ Email៖</strong> ចូលទៅកាន់ Gmail រួចចុចលើប៊ូតុង <strong>Verify email</strong>។</li>
+            <li><strong>បំពេញព័ត៌មាន Profile៖</strong> បំពេញ Name, Role (Junior Web Developer), Team Name រួចចុច Continue to deploy។</li>
+            <li><strong>ចូលទៅកាន់ Netlify Drop៖</strong> ចូលទៅកាន់តំណភ្ជាប់ <code>https://app.netlify.com/drop</code>។</li>
+            <li><strong>បង្ហោះ Folder វេបសាយ (Drag &amp; Drop):</strong> ចាប់ទាញ Folder វេបសាយរបស់អ្នក (ដែលផ្ទុក index.html) ទម្លាក់ចូលទៅក្នុងប្រអប់រង្វង់ Drag and drop your project folder here។</li>
+            <li><strong>ប្តូរឈ្មោះវេបសាយ (Site Name):</strong> ចុចលើ <strong>Quick setup</strong> -> <strong>Change site name</strong> (ប្តូរឈ្មោះតាមទម្រង់ត្រកូល និងឈ្មោះ ឧ. <code>yourname</code>)។</li>
+            <li><strong>អាសយដ្ឋានផ្សាយផ្ទាល់ (Live URL):</strong> វេបសាយរបស់អ្នកនឹងដំណើរការផ្សាយផ្ទាល់លើពិភពលោកតាមរយៈ <code>https://yourname.netlify.app/</code>។</li>
+            <li><strong>របៀប Update កូដថ្មី (Redeploy):</strong> ចូលទៅកាន់គម្រោងរបស់អ្នក -> ចុចលើ Tab <strong>Deploys</strong> -> ចាប់ទាញ Folder ដែលបានកែប្រែទម្លាក់ចូលម្តងទៀត Netlify នឹង Update កូដថ្មីដោយស្វ័យប្រវត្តិភ្លាមៗ។</li>
+        </ol>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 RUPP - Front-End Web Application Development</p>
+    </footer>
+</body>
+</html>
